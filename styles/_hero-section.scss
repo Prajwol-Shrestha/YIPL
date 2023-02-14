@@ -1,0 +1,22 @@
+.hero-section{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+
+}
+
+@media screen and (min-width: 700px) {
+    .hero-section{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+
+        .hero-image-container{
+            width: 50%;
+        }
+        .hero-content{
+            width: 40%;
+            min-width: 300px;
+        }
+    }
+}

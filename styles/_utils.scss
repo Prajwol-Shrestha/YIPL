@@ -10,5 +10,27 @@
     top: 30vh  !important;
 }
 
+.btn{
+    border: none;
+    border-radius: 2em;
+    color: $clr-white;
+    background-color: $clr-primary;
+    cursor: pointer;
+}
+
 @include margin-classes;
 @include padding-classes;
+
+
+@media screen and (max-width: 500px) {
+    .container{
+        max-width: 85%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .btn-container{
+        justify-content: center;
+        align-items: center;
+    }
+}

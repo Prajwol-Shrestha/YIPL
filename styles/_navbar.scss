@@ -43,15 +43,34 @@
     .nav-links{
         display: none;
         gap: 1.65em;
+
+        .nav-link{
+            opacity: 0.5;
+        }
+
+        .nav-link:hover{
+            opacity: 0.85;
+        }
+
+        .active{
+            opacity: 1;
+            font-weight: bold;
+        }
     }
 }
 
 
-@media screen and (min-width: 700px) {
-    .nav-links{
-        display: flex;
-    }
-    .nav-links-sm{
-        display: none;
+@media screen and (min-width: 900px) {
+    .navbar{
+        .hamburger{
+            display: none;
+        }
+        .nav-links{
+            display: flex;
+        }
+        .nav-links-sm{
+            display: none;
+        }
+        
     }
 }
