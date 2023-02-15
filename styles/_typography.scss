@@ -2,19 +2,30 @@ body{
     font-family: 'Mulish', sans-serif;
 }
 
-.heading{
+.heading,
+.sub-heading
+.title{
     // font-size: $base-font-size * 1.85;
     font-size: clamp(2rem, 2.85vw, 3rem);
     font-weight: 700;
     color: $clr-black;
-    letter-spacing: .025rem;
+    letter-spacing: 0.025rem;
+}
+.sub-heading{
+    font-size: clamp(1.5rem, 1.85vw, 1.85rem);
+    text-align: center;
 }
 
-.para{
+.para,
+.card-para{
     // font-size: $base-font-size * 0.9;
     font-size: clamp(0.9rem, 1.15vw, 1.15rem);
     color: $clr-para;
     font-weight: 400;
+    line-height: 1.35rem;
+}
+.card-para{
+    font-size: clamp(0.75rem, 1.05vw, 1.05rem);
 }
 
 

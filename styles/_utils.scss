@@ -1,5 +1,6 @@
 .container{
-    max-width: 80%;
+    max-width: 1400px;
+    width: 80%;
     margin: 0 auto;
 }
 .flex{
@@ -11,11 +12,20 @@
 }
 
 .btn{
+    font-weight: bold;
     border: none;
     border-radius: 2em;
     color: $clr-white;
     background-color: $clr-primary;
     cursor: pointer;
+}
+
+.underline{
+    height: 2px;
+    width: min(10vw, 80px);
+    border-radius: 5px;
+    background-color: $clr-black;
+    margin: 0 auto;
 }
 
 @include margin-classes;

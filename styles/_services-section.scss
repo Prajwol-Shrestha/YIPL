@@ -1,0 +1,32 @@
+.services-section{
+    
+    .services-container{
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 250px);
+        justify-content: center;
+        gap: 2em;
+        .service-card{
+            max-width: 250px;
+            box-shadow: 8px 10px 19px -5px rgba(140,139,139,0.75);
+            -webkit-box-shadow: 8px 10px 19px -5px rgba(140,139,139,0.75);
+            -moz-box-shadow: 8px 10px 19px -5px rgba(140,139,139,0.75);
+
+            border-radius: 1.5em;
+
+            .img-container{
+                img{
+                    width: auto;
+                    height: 4em;
+                }
+            }
+        }
+    }
+}
+
+.blob{
+    position: absolute;
+    left: -30vw;
+    top: -15vw;
+    z-index: -1;
+}
