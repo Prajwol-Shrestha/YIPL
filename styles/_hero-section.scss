@@ -9,13 +9,13 @@
 @media screen and (min-width: 700px) {
     .hero-section{
         flex-direction: row-reverse;
-        justify-content: space-between;
+        // justify-content: space-between;
 
         .hero-image-container{
             width: 50%;
         }
         .hero-content{
-            width: 50%;
+            width: 40%;
             // min-width: 300px;
         }
     }

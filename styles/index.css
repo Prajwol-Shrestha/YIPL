@@ -911,13 +911,12 @@ body {
 @media screen and (min-width: 700px) {
   .hero-section {
     flex-direction: row-reverse;
-    justify-content: space-between;
   }
   .hero-section .hero-image-container {
     width: 50%;
   }
   .hero-section .hero-content {
-    width: 50%;
+    width: 40%;
   }
 }
 .services-section .services-container {
@@ -956,13 +955,13 @@ body {
 @media screen and (min-width: 700px) {
   .about-section {
     flex-direction: row;
-    justify-content: space-between;
   }
   .about-section .img-container {
     width: 50%;
   }
   .about-section .about-content {
     width: 40%;
+    max-width: 350px;
   }
   .about-section .about-content .sub-heading {
     text-align: left;

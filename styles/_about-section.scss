@@ -8,7 +8,7 @@
 @media screen and (min-width: 700px) {
     .about-section{
         flex-direction: row;
-        justify-content: space-between;
+        // justify-content: space-between;
 
         .img-container{
             width: 50%;
@@ -16,6 +16,7 @@
         .about-content{
             width: 40%;
             // min-width: 300px;
+            max-width: 350px;
 
             .sub-heading{
                 text-align: left;
