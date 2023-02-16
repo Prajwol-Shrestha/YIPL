@@ -70,13 +70,21 @@ body {
   top: 30vh !important;
 }
 
-.btn {
+.btn,
+.hero-btn {
   font-weight: bold;
   border: none;
   border-radius: 2em;
   color: #F5F5F5;
   background-color: #458FF6;
   cursor: pointer;
+  padding: 1em 2em;
+}
+
+.btn {
+  background-color: #F5F5F5;
+  color: #458FF6;
+  border: 1px solid #458FF6;
 }
 
 .underline {

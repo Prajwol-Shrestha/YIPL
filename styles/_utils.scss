@@ -11,13 +11,20 @@
     top: 30vh  !important;
 }
 
-.btn{
+.btn,
+.hero-btn{
     font-weight: bold;
     border: none;
     border-radius: 2em;
     color: $clr-white;
     background-color: $clr-primary;
     cursor: pointer;
+    padding: 1em 2em;
+}
+.btn{
+    background-color: $clr-white;
+    color: $clr-primary;
+    border: 1px solid $clr-primary;
 }
 
 .underline{
