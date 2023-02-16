@@ -1,0 +1,29 @@
+.about-section{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+}
+
+@media screen and (min-width: 700px) {
+    .about-section{
+        flex-direction: row;
+        justify-content: space-between;
+
+        .img-container{
+            width: 50%;
+        }
+        .about-content{
+            width: 40%;
+            // min-width: 300px;
+
+            .sub-heading{
+                text-align: left;
+            }
+            .underline{
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+    }
+}
