@@ -19,10 +19,16 @@ body{
 .para,
 .card-para{
     // font-size: $base-font-size * 0.9;
-    font-size: clamp(0.9rem, 1.15vw, 1.15rem);
+    font-size: clamp(0.85rem, 1.125vw, 1.125rem);
     color: $clr-para;
     font-weight: 400;
     line-height: 1.35rem;
+}
+.service-para{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 .card-para{
     font-size: clamp(0.75rem, 1.05vw, 1.05rem);

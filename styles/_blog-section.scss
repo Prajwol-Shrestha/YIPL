@@ -1,19 +1,25 @@
-.services-section{
-    
-    .services-container{
+.blog-section{
+
+
+    .btn-container{
+        justify-content: center;
+    }
+    .blog-container{
         position: relative;
         display: grid;
-        grid-template-columns: repeat(auto-fit, 250px);
+        grid-template-columns: repeat(auto-fit, 300px);
         justify-content: center;
         gap: 2em;
+
         .blob{
             position: absolute;
             left: -30vw;
             top: -15vw;
             z-index: -1;
         }
-        .service-card{
-            max-width: 250px;
+
+        .blog-card{
+            max-width: 300px;
             box-shadow: 8px 10px 19px -5px rgba(140,139,139,0.75);
             -webkit-box-shadow: 8px 10px 19px -5px rgba(140,139,139,0.75);
             -moz-box-shadow: 8px 10px 19px -5px rgba(140,139,139,0.75);
@@ -22,11 +28,16 @@
 
             .img-container{
                 img{
-                    width: auto;
-                    height: 4em;
+                    width: 100%;
                 }
             }
         }
     }
 }
 
+.blob{
+    position: absolute;
+    left: -30vw;
+    top: -15vw;
+    z-index: -1;
+}
