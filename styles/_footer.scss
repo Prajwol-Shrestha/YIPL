@@ -1,0 +1,43 @@
+.footer{
+    background: $footer-gradient;
+
+    .footer-section{
+        display: grid;
+        grid-template-columns: 350px repeat(auto-fit, 200px);
+        justify-content: space-between;
+        align-items: stretch;
+        gap: 1em;
+
+    }
+    .col-intro{
+        max-width: 350px;
+        // display: inline-block;
+    }
+    .col{
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 0.5em;
+        .logo-container{
+            .logo{
+                width: 40%;
+                cursor: pointer;
+            }
+        }
+        .footer-link{
+            color: $clr-white;
+            &:hover{
+                opacity: 0.85;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer{
+    
+        .footer-section{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    }
+}

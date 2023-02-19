@@ -3,7 +3,7 @@
     .services-container{
         position: relative;
         display: grid;
-        grid-template-columns: repeat(auto-fit, 250px);
+        grid-template-columns: repeat(auto-fit, 280px);
         justify-content: center;
         gap: 2em;
         .blob{
@@ -13,7 +13,7 @@
             z-index: -1;
         }
         .service-card{
-            max-width: 250px;
+            // max-width: 280px;
             box-shadow: 8px 10px 19px -5px rgba(140,139,139,0.75);
             -webkit-box-shadow: 8px 10px 19px -5px rgba(140,139,139,0.75);
             -moz-box-shadow: 8px 10px 19px -5px rgba(140,139,139,0.75);
@@ -30,3 +30,12 @@
     }
 }
 
+
+
+@media screen and (min-width: 1240px) {
+    .services-section{
+        .services-container{
+            grid-template-columns: repeat(3, 280px);
+        }
+    }
+}

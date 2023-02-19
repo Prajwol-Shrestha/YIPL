@@ -26,7 +26,7 @@ body {
 }
 
 .heading,
-.sub-heading .title {
+.sub-heading {
   font-size: clamp(2rem, 2.85vw, 3rem);
   font-weight: 700;
   color: #000000;
@@ -36,6 +36,20 @@ body {
 .sub-heading {
   font-size: clamp(1.5rem, 1.85vw, 1.85rem);
   text-align: center;
+}
+
+.footer-title {
+  font-size: clamp(1.05rem, 1.25vw, 1.25rem);
+  color: #FFFFFF;
+}
+
+.footer-link,
+.footer-para {
+  font-size: clamp(0.85rem, 0.95vw, 0.95rem);
+  color: #FFFFFF;
+  text-align: left !important;
+  line-height: 1.35rem;
+  margin: 0;
 }
 
 .para,
@@ -98,7 +112,7 @@ body {
   font-weight: bold;
   border: none;
   border-radius: 2em;
-  color: #F5F5F5;
+  color: #FFFFFF;
   background-color: #458FF6;
   cursor: pointer;
   padding: 1em 2em;
@@ -107,7 +121,7 @@ body {
 }
 
 .btn {
-  background-color: #F5F5F5;
+  background-color: #FFFFFF;
   color: #458FF6;
   border: 1px solid #458FF6;
   gap: 0.5em;
@@ -909,6 +923,7 @@ body {
 }
 .navbar .logo-container .logo {
   width: 70%;
+  cursor: pointer;
 }
 .navbar .bar {
   width: 2.25em;
@@ -983,7 +998,7 @@ body {
 .services-section .services-container {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 250px);
+  grid-template-columns: repeat(auto-fit, 280px);
   justify-content: center;
   gap: 2em;
 }
@@ -994,7 +1009,6 @@ body {
   z-index: -1;
 }
 .services-section .services-container .service-card {
-  max-width: 250px;
   box-shadow: 8px 10px 19px -5px rgba(140, 139, 139, 0.75);
   -webkit-box-shadow: 8px 10px 19px -5px rgba(140, 139, 139, 0.75);
   -moz-box-shadow: 8px 10px 19px -5px rgba(140, 139, 139, 0.75);
@@ -1005,6 +1019,11 @@ body {
   height: 4em;
 }
 
+@media screen and (min-width: 1240px) {
+  .services-section .services-container {
+    grid-template-columns: repeat(3, 280px);
+  }
+}
 .about-section {
   flex-direction: column;
   align-items: center;
@@ -1095,5 +1114,40 @@ body {
   .contact-section .contact-form .basic-info {
     -moz-column-gap: 1em;
          column-gap: 1em;
+  }
+}
+.footer {
+  background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+}
+.footer .footer-section {
+  display: grid;
+  grid-template-columns: 350px repeat(auto-fit, 200px);
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 1em;
+}
+.footer .col-intro {
+  max-width: 350px;
+}
+.footer .col {
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5em;
+}
+.footer .col .logo-container .logo {
+  width: 40%;
+  cursor: pointer;
+}
+.footer .col .footer-link {
+  color: #FFFFFF;
+}
+.footer .col .footer-link:hover {
+  opacity: 0.85;
+}
+
+@media screen and (max-width: 600px) {
+  .footer .footer-section {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }/*# sourceMappingURL=index.css.map */
