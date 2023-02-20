@@ -5,8 +5,7 @@
         display: grid;
         grid-template-columns: 350px repeat(auto-fit, 200px);
         justify-content: space-between;
-        align-items: stretch;
-        gap: 1em;
+        gap: 2em;
 
     }
     .col-intro{
@@ -19,6 +18,7 @@
         gap: 0.5em;
         .logo-container{
             .logo{
+                margin-top: -10px;
                 width: 40%;
                 cursor: pointer;
             }
