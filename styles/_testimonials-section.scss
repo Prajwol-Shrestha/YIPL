@@ -37,6 +37,28 @@
             }
         }
     }
+
+    .slider-controller-container{
+        align-items: center;
+        justify-content: center;
+        gap: 3em;
+        .img-container{
+            width: 1.65em;
+        }
+        .dots-container{
+            gap: .85em;
+            .dot{
+                height: 8px;
+                width: 8px;
+                background-color: $clr-primary;
+                border-radius: 50%;
+                opacity: 0.3;
+            }
+            .active{
+                opacity: 1;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -56,7 +78,7 @@
 @media screen and (min-width: 1000px) {
     .testimonial-section{
         .testimonial-card{
-            width: 60vw;
+            max-width: 800px;
             margin: 0 auto;
         }
     }

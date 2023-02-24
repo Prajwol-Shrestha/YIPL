@@ -1400,10 +1400,18 @@ body {
   z-index: -1;
 }
 .services-section .services-container .service-card {
+  box-shadow: 0px 0px 1px 0px rgba(163, 162, 162, 0.75);
+  -webkit-box-shadow: 0px 0px 1px 0px rgba(163, 162, 162, 0.75);
+  -moz-box-shadow: 0px 0px 1px 0px rgba(163, 162, 162, 0.75);
+  border: 1px solid #FFFFFF;
+  transition: 0.5s ease-in-out;
+  border-radius: 1.5em;
+}
+.services-section .services-container .service-card:hover {
+  transform: scale(1.05);
   box-shadow: 8px 10px 19px -5px rgba(140, 139, 139, 0.75);
   -webkit-box-shadow: 8px 10px 19px -5px rgba(140, 139, 139, 0.75);
   -moz-box-shadow: 8px 10px 19px -5px rgba(140, 139, 139, 0.75);
-  border-radius: 1.5em;
 }
 .services-section .services-container .service-card .img-container img {
   width: auto;
@@ -1474,6 +1482,27 @@ body {
 .testimonial-section .testimonial-card .testimonial-content .client-testimonial .client-para {
   opacity: 0.9;
 }
+.testimonial-section .slider-controller-container {
+  align-items: center;
+  justify-content: center;
+  gap: 3em;
+}
+.testimonial-section .slider-controller-container .img-container {
+  width: 1.65em;
+}
+.testimonial-section .slider-controller-container .dots-container {
+  gap: 0.85em;
+}
+.testimonial-section .slider-controller-container .dots-container .dot {
+  height: 8px;
+  width: 8px;
+  background-color: #458FF6;
+  border-radius: 50%;
+  opacity: 0.3;
+}
+.testimonial-section .slider-controller-container .dots-container .active {
+  opacity: 1;
+}
 
 @media screen and (max-width: 700px) {
   .testimonial-section .testimonial-card .testimonial-content {
@@ -1486,7 +1515,7 @@ body {
 }
 @media screen and (min-width: 1000px) {
   .testimonial-section .testimonial-card {
-    width: 60vw;
+    max-width: 800px;
     margin: 0 auto;
   }
 }
