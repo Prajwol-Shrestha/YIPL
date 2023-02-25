@@ -122,8 +122,12 @@ body {
   display: flex;
 }
 
-.top30VH {
-  top: 30vh !important;
+.top0 {
+  top: 0 !important;
+}
+
+.color-white {
+  background-color: #FFFFFF !important;
 }
 
 .btn,
@@ -1316,12 +1320,16 @@ body {
   width: 70%;
   cursor: pointer;
 }
+.navbar .hamburger {
+  z-index: 5;
+}
 .navbar .bar {
-  width: 2.25em;
+  width: 2em;
   height: 0.2em;
   background-color: #000000;
   margin: 0.35em 0;
   transition: 0.4s;
+  z-index: 3;
 }
 .navbar .change .bar-1 {
   transform: translate(0, 11px) rotate(-45deg);
@@ -1332,15 +1340,29 @@ body {
 .navbar .change .bar-3 {
   transform: translate(0, -11px) rotate(45deg);
 }
-.navbar .menu-overlay {
-  position: absolute;
-  top: -50vh;
-  left: 25vw;
+.navbar .menu-overlay-container {
+  overflow: hidden;
+  position: fixed;
+  top: -100vh;
+  left: 0;
   transition: 0.65s ease-in;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
 }
-.navbar .menu-overlay .nav-links-sm {
+.navbar .menu-overlay-container .menu-overlay {
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+.navbar .menu-overlay-container .menu-overlay .nav-links-sm {
   flex-direction: column;
   gap: 1em;
+}
+.navbar .menu-overlay-container .menu-overlay .nav-links-sm .nav-link {
+  z-index: 5;
+  color: #FFFFFF;
+  letter-spacing: 0.125rem;
 }
 .navbar .nav-links {
   display: none;
@@ -1405,6 +1427,7 @@ body {
   -moz-box-shadow: 0px 0px 1px 0px rgba(163, 162, 162, 0.75);
   border: 1px solid #FFFFFF;
   transition: 0.5s ease-in-out;
+  cursor: pointer;
   border-radius: 1.5em;
 }
 .services-section .services-container .service-card:hover {
@@ -1537,10 +1560,17 @@ body {
 }
 .blog-section .blog-container .blog-card {
   max-width: 300px;
+  cursor: pointer;
+  box-shadow: 0px 0px 3px 0px rgba(163, 162, 162, 0.75);
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(163, 162, 162, 0.75);
+  -moz-box-shadow: 0px 0px 3px 0px rgba(163, 162, 162, 0.75);
+  transition: 0.5s ease-in-out;
+  border-radius: 1.5em;
+}
+.blog-section .blog-container .blog-card:hover {
   box-shadow: 8px 10px 19px -5px rgba(140, 139, 139, 0.75);
   -webkit-box-shadow: 8px 10px 19px -5px rgba(140, 139, 139, 0.75);
   -moz-box-shadow: 8px 10px 19px -5px rgba(140, 139, 139, 0.75);
-  border-radius: 1.5em;
 }
 .blog-section .blog-container .blog-card .img-container img {
   width: 100%;

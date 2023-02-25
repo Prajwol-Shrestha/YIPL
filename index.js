@@ -1,10 +1,13 @@
 const hamburger = document.querySelector('.hamburger')
-const menuOverlay = document.querySelector('.menu-overlay')
-const menuSm = document.querySelector('.mobile-menu')
+const menuOverlay = document.querySelector('.menu-overlay-container')
+const bars = document.querySelectorAll('.bar')
 
 function toggleMenu(){
     hamburger.classList.toggle('change')
-    menuOverlay.classList.toggle('top30VH')
+    bars.forEach( (bar) =>
+        bar.classList.toggle('color-white')
+    )
+    menuOverlay.classList.toggle('top0')
 }
 
 hamburger.addEventListener('click', toggleMenu)

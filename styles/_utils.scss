@@ -7,8 +7,11 @@
     display: flex;
 }
 
-.top30VH{
-    top: 30vh  !important;
+.top0{
+    top: 0  !important;
+}
+.color-white{
+    background-color: $clr-white !important;
 }
 
 .btn,
