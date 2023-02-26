@@ -1580,12 +1580,6 @@ body {
   justify-content: center;
   gap: 2em;
 }
-.blog-section .blog-container .blob {
-  position: absolute;
-  left: -30vw;
-  top: -15vw;
-  z-index: -1;
-}
 .blog-section .blog-container .blog-card {
   max-width: 300px;
   cursor: pointer;
